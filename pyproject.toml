@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "taobao-image-saver"
+version = "0.1.0"
+description = "A local desktop assistant for saving product images exposed during normal Taobao browsing."
+requires-python = ">=3.10"
+dependencies = [
+  "playwright>=1.44.0",
+  "PySide6>=6.7.0",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8.2.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
