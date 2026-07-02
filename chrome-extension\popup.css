@@ -1,0 +1,66 @@
+body {
+  width: 320px;
+  margin: 0;
+  font-family: "Microsoft YaHei", system-ui, sans-serif;
+  color: #202124;
+  background: #ffffff;
+}
+
+main {
+  padding: 14px;
+}
+
+h1 {
+  margin: 0 0 12px;
+  font-size: 17px;
+  font-weight: 650;
+}
+
+label {
+  display: grid;
+  gap: 6px;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 34px;
+  padding: 6px 9px;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+button {
+  width: 100%;
+  height: 36px;
+  margin-top: 8px;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  background: #f6f8fa;
+  color: #24292f;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button.primary {
+  border-color: #f05a1a;
+  background: #ff6a00;
+  color: #fff;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+#status {
+  min-height: 38px;
+  margin: 12px 0 0;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #57606a;
+  white-space: pre-wrap;
+}

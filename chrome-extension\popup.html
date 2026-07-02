@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <title>淘宝图片保存</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main>
+      <h1>淘宝图片保存</h1>
+      <label>
+        关键词
+        <input id="keyword" placeholder="防晒服" />
+      </label>
+      <label>
+        保存商品数
+        <input id="maxProducts" type="number" min="1" max="20" value="3" />
+      </label>
+      <button id="openSearch">用当前 Chrome 搜索</button>
+      <button id="autoSave" class="primary">自动搜索并保存</button>
+      <button id="saveImages" class="primary">保存当前页图片</button>
+      <button id="continueTask">我已处理验证，继续</button>
+      <button id="stopTask">停止任务</button>
+      <p id="status">请先打开淘宝搜索页或商品页。</p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "淘宝商品高清图保存助手",
+  "version": "0.1.0",
+  "description": "在普通 Chrome 中从当前淘宝/天猫页面提取并保存商品图片。",
+  "permissions": ["activeTab", "scripting", "downloads", "tabs", "storage"],
+  "host_permissions": [
+    "https://*.taobao.com/*",
+    "https://*.tmall.com/*",
+    "https://*.tmall.hk/*",
+    "https://*.alicdn.com/*",
+    "https://*.taobaocdn.com/*"
+  ],
+  "action": {
+    "default_title": "保存淘宝图片",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "service_worker.js"
+  }
+}

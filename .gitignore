@@ -7,9 +7,12 @@ __pycache__/
 .ruff_cache/
 
 browser-user-data/
+browser-profile/
 output/
 logs/
+.tools/
 *.log
+*.zip
 
 .env
 .DS_Store
